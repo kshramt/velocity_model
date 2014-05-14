@@ -21,7 +21,7 @@ iasp91.ptime: bin/gen_time_table.py work/iasp91.locsat
 
 work/iasp91.locsat: work/jb_header.locsat
 	set +o nounset
-	taup_table -header $< -ph p,P,Pdiff -locsat >| $@
+	taup_table -header $< -ph p,P,Pdiff,Pn -locsat >| $@
 
 work/jb_header.locsat: bin/gen_header.py data/params.json
 	mkdir -p $(@D)
