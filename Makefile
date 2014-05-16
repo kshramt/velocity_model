@@ -1,8 +1,8 @@
 # Constants
 MY_PYTHON ?= python3
 
-MODELS := iasp91 jb
-MODEL_PTIMES := $(MODELS:%=%.ptime)
+MODELS := iasp91 jb prem ak135 1066a 1066b pwdk sp6 herrin qdt
+MODEL_PTIMES := $(MODELS:%=output/%.ptime)
 
 # Configurations
 .SUFFIXES:
@@ -25,7 +25,8 @@ work/jb_header.locsat: bin/gen_header.py data/params.json
 
 # Rules
 
-%.ptime: bin/gen_time_table.py work/%.locsat
+output/%.ptime: bin/gen_time_table.py work/%.locsat
+	mkdir -p $(@D)
 	$(MY_PYTHON) $< < work/$*.locsat >| $@
 
 work/%.locsat: work/jb_header.locsat
