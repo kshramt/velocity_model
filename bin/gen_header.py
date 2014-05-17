@@ -28,7 +28,7 @@ n # P travel-time tables for iasp91 structure. (From TauP_Table)
 {depths}
 {n_distances} # number of distances
 {distances}""".format(n_depths=len(depths),
-               depths=wrap(depths),
-               n_distances=len(distances),
-               distances=wrap(distances))
+                      depths=wrap(depths),
+                      n_distances=len(distances),
+                      distances=wrap(distances))
 )
