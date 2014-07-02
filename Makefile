@@ -31,4 +31,4 @@ output/%.ptime: bin/gen_time_table.py work/%.locsat
 
 work/%.locsat: work/jb_header.locsat
 	set +o nounset
-	taup_table -header $< -ph p,P,Pdiff,Pn -locsat -model $* >| $@
+	taup_table -header $< -ph ttp -locsat -model $* >| $@
