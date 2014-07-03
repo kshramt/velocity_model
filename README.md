@@ -1,7 +1,7 @@
 # What is This?
 
-This program generates a P-wave travel time table for the iasp91 velocity model.
-Format of an output file, `iasp91.ptime`, is compatible with `jb.ptime` that is used by `getTp` in `sub.greenMfar.f90`.
+This program generates P- and S-wave travel time tables for many velocity models.
+Generated time tables will be read by `getTp` routine in `sub.greenMfar.f90` without modifications.
 
 # Usage
 
