@@ -11,3 +11,7 @@ Please execute `make` to generate `iasp91.ptime`.
 
 - [TauP](http://www.seis.sc.edu/TauP/)
 - `kshramt` (`pip-3.x install --user -U kshramt`)
+
+# License
+
+GPL v3.
