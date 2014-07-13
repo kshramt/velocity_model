@@ -5,7 +5,7 @@ Generated time tables will be read by `getTp` routine in `sub.greenMfar.f90` wit
 
 # Usage
 
-Please execute `make` to generate `iasp91.ptime`.
+Please execute `make` to generate time tables.
 
 # Dependencies
 
